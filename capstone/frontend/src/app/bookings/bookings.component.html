@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+<th>booking id</th>
+<th>username</th>
+<th>organiser</th>
+<th>event name</th>
+<th>Booking Date</th>
+</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let booking of bookings">
+<td>{{booking.bookingId}}</td>
+<td>{{booking.user.fullname}}</td>
+<td>{{booking.event.organiser}}</td>
+<td>{{booking.event.name}}</td>
+<td>{{booking.bookingDate}}</td>
+</tr>
+    </tbody>
+</table>

@@ -1,0 +1,20 @@
+<div class="event-details">
+    <div>
+        <label>NAME:</label>{{events.name}}
+    </div>
+    <div>
+        <label>ORGANISER:</label>{{events.organiser}}
+    </div>
+    <div>
+        <label>LOCATION:</label>{{events.location}}
+    </div>
+    <div>
+        <label>PRICE:</label>{{events.price}}
+    </div>
+    <div>
+        <label>EVENT DATE:</label>{{events.date}}
+    </div>
+    <div>
+        <button  class="btn-primary" (click)="book(events.id,events.price)">BOOK</button>
+    </div>
+</div>

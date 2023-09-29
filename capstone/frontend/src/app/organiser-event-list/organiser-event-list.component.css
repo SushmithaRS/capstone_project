@@ -1,0 +1,31 @@
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table Header Styles */
+th {
+  background-color: rgb(5, 65, 5); /* Green background color for header cells */
+  color: white; /* White text color for header cells */
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table Row Styles */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray background color for even rows */
+}
+
+/* Table Cell Styles */
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #d9ffd9; /* Light green background color on hover */
+}

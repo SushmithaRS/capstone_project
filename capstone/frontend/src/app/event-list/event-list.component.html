@@ -1,0 +1,30 @@
+
+<form>
+  <label for="options">select a category:</label>
+  <select id="options" (change)="findcategory()" [(ngModel)]="model.category" name="options">
+    <option value="music">music</option>
+    <option value="webinar">webinar</option>
+    <option value="seminar">seminar</option>
+    <option value="workshop">workshop</option>
+  </select>
+</form>
+<table *ngIf="model.category && events.length > 0">
+  <thead>
+    <tr>
+      <th>Event name</th>
+      <th>organiser name</th>
+      <th>location</th>
+      <th>view details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of events">
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.organiser }}</td>
+      <td>{{ employee.location }}</td>
+      <td>
+        <button class="btn-primary" (click)="details(employee.id)">view</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,41 @@
+
+<div class="heading">SIGN UP</div> 
+<section class="block">
+<div class="reg col-md-6 offset-md-3">
+    
+    <form (ngSubmit) = "onSubmit()" class="register-block">
+    
+        <div class="form-group">
+            <label> Full Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "organisers.fullname" name = "firstName" required>
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="email" class ="form-control" id = "emailId"
+                [(ngModel)] = "organisers.email" name = "emailId" required>
+        </div>
+        <div class="form-group">
+            <label> Mobile Number</label>
+            <input type="number" class ="form-control" id = "mobile"
+                    [(ngModel)] = "organisers.mobileno" name = "mobile" required>
+        </div>
+        <div class="form-group">
+            <label> Password</label>
+            <input type="password" class ="form-control" id = "password"
+                    [(ngModel)] = "organisers.password" name = "password" required>
+        </div>
+        <div class="form-group">
+            <label> Confirm Password</label>
+            <input type="password" class ="form-control" id = "Confirm"
+                    [(ngModel)] = "organisers.confirmpassword" name = "Confirm" required>
+        </div>
+        <button class = "btn btn-primary" type ="submit">Submit</button>
+        <br>
+        <a  [routerLink]="['/organisers-login']">Already have an account? Login!</a>
+    
+    </form>
+    </div>
+    </section>
+

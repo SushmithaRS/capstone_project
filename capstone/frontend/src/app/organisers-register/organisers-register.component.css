@@ -1,0 +1,73 @@
+/* Heading Style */
+.heading {
+  font-size: 24px;
+  text-align: center;
+  color: green; /* Green color for the heading */
+  margin-top: 20px;
+}
+
+/* Form Container Style */
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Background color for the form container */
+}
+
+/* Registration Form Style */
+.reg {
+  background-color: #ffffff; /* Background color for the form */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: auto;
+  width: 500px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label Styles */
+label {
+  font-weight: bold;
+  color: green; /* Green color for form labels */
+}
+
+/* Form Control Styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Submit Button Style */
+.btn-primary {
+  background-color: green; /* Green color for the button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+  background-color: darkgreen; /* Darker green color on hover */
+}
+
+/* New User Link Style */
+a {
+  color: green;
+  text-decoration: none;
+}
+
+/* New User Link Hover Style */
+a:hover {
+  text-decoration: underline;
+}
